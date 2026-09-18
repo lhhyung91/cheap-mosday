@@ -107,7 +107,7 @@ export function Game() {
           onChangeDifficulty={exit}
         />
       ) : (
-        <p className="key-hint pointer-events-none absolute inset-x-0 bottom-6 text-center font-mono text-sm tracking-[0.25em] text-white/40">
+        <p className="key-hint pointer-events-none absolute inset-x-0 bottom-6 text-center font-mono text-sm tracking-[0.25em] text-white/35">
           ← A F &nbsp;/&nbsp; → D J
         </p>
       )}

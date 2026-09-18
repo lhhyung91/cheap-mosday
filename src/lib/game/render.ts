@@ -30,7 +30,7 @@ const BOTTOM_RESERVE = 160;
  */
 const LEGEND = [
   { kind: 'dodge', text: '치기' },
-  { kind: 'decoy', text: '누르지 마시오' },
+  { kind: 'decoy', text: '넘기기' },
   { kind: 'mirror', text: '노란 칸에서 치기' },
 ] as const satisfies readonly { kind: CueKind; text: string }[];
 

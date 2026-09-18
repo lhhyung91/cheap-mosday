@@ -20,7 +20,7 @@ export function TouchPads({ onPress }: TouchPadsProps) {
             event.preventDefault();
             onPress(lane, event.timeStamp);
           }}
-          className="pointer-events-auto flex flex-1 touch-none items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-4xl text-white/45 select-none active:bg-white/15"
+          className="pointer-events-auto flex flex-1 touch-none items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-4xl text-white/70 select-none active:bg-white/15"
         >
           {lane === 'left' ? '←' : '→'}
         </button>

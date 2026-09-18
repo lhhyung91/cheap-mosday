@@ -3,6 +3,9 @@
 @theme {
   --color-field: #0a0a0a;
   --color-ink: #ededed;
+  /* 캔버스 판정 색(src/lib/game/config.ts의 COLORS.perfect)과 반드시 같은 값으로 맞춘다 —
+     PERFECT 판정과 NEW BEST가 같은 색으로 읽혀야 하므로, 하나를 바꾸면 다른 쪽도 바꾼다. */
+  --color-perfect: #5eead4;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

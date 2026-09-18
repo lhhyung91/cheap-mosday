@@ -20,12 +20,12 @@ export function Hud({ score, best, combo, lives, maxLives, elapsedMs, onExit }: 
       <div>
         <p className="text-3xl tabular-nums sm:text-4xl">{score.toLocaleString()}</p>
         {best > 0 && (
-          <p className="mt-1 text-sm tracking-[0.15em] text-white/40 tabular-nums">
+          <p className="mt-1 text-sm tracking-[0.15em] text-white/50 tabular-nums">
             BEST {best.toLocaleString()}
           </p>
         )}
         {combo >= 2 && (
-          <p className="mt-1 text-sm tracking-[0.15em] text-white/55">
+          <p className="mt-1 text-sm tracking-[0.15em] text-white/50">
             {combo} COMBO{multiplier > 1 && ` ×${multiplier}`}
           </p>
         )}
@@ -35,13 +35,13 @@ export function Hud({ score, best, combo, lives, maxLives, elapsedMs, onExit }: 
           type="button"
           onClick={onExit}
           // 판 중에 엄지가 닿지 않는 위쪽 가운데. 하단은 터치 패드가 쓴다.
-          className="pointer-events-auto min-h-11 px-3 text-base text-white/40 transition-colors hover:text-white/80 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none"
+          className="pointer-events-auto min-h-11 px-3 font-sans text-base text-white/50 transition-colors hover:text-white/85 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none"
         >
           나가기
         </button>
       )}
       <div className="flex flex-col items-end gap-2.5">
-        <p className="text-lg text-white/65 tabular-nums sm:text-xl">{formatTime(elapsedMs)}</p>
+        <p className="text-lg text-white/70 tabular-nums sm:text-xl">{formatTime(elapsedMs)}</p>
         <div className="flex gap-2">
           {Array.from({ length: maxLives }, (_, index) => (
             <div key={index} className={`size-3 ${index < lives ? 'bg-ink' : 'bg-white/20'}`} />
