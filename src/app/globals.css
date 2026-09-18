@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-field: #0a0a0a;
+  --color-ink: #ededed;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-field);
+  color: var(--color-ink);
+  /* 판정 중 실수로 텍스트가 잡히거나 화면이 당겨지지 않게 한다. */
+  overscroll-behavior: none;
+  user-select: none;
+}
+
+/* 터치 패드는 손가락 입력 기기에서만. 좁은 창에서 확인할 수 있게 폭 조건도 함께 둔다. */
+.touch-pads {
+  display: none;
+}
+
+.key-hint {
+  display: block;
+}
+
+@media (pointer: coarse), (max-width: 767px) {
+  .touch-pads {
+    display: flex;
+  }
+
+  .key-hint {
+    display: none;
+  }
+}
