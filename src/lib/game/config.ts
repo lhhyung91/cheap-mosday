@@ -5,9 +5,9 @@ export type Difficulty = 'easy' | 'normal' | 'hard';
 export const DIFFICULTIES: Difficulty[] = ['easy', 'normal', 'hard'];
 
 export const DIFFICULTY_LABEL: Record<Difficulty, string> = {
-  easy: '하',
-  normal: '중',
-  hard: '상',
+  easy: 'EASY',
+  normal: 'NORMAL',
+  hard: 'HARD',
 };
 
 export type Stage = {
